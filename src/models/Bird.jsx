@@ -32,7 +32,7 @@ export function Bird() {
       // Change direction to forward and reset the bird's rotation
       birdRef.current.rotation.y = 0;
     }
-
+ 
     // Update the X and Z positions based on the direction
     if (birdRef.current.rotation.y === 0) {
       // Moving forward
