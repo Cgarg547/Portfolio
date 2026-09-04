@@ -1,62 +1,70 @@
- import {Link} from "react-router-dom";
- import {arrow} from "../assets/icons";
+import { Link } from "react-router-dom";
+import { arrow } from "../assets/icons";
 
- const HomeInfo = ({currentStage}) => {
-   if (currentStage === 1)
-     return (
-       <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
-         Hi, I'm
-         <span className='font-semibold mx-2 text-white'>Chirag</span>
+const HomeInfo = ({ currentStage }) => {
+  if (currentStage === 1)
+    return (
+      <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5">
+        Hi, I'm
+        <span className="font-semibold mx-2 text-white">Chirag</span>
         👋
-            <br />  
-        A Software Engineer from India 🇮🇳
-         </h1>  
-     );
+        <br />
+        A Computer Science Student & Backend Developer
+      </h1>
+    );
 
-   if (currentStage === 2) {
-     return (
-       <div className='info-box'>
-         <p className='font-medium sm:text-xl text-center'>
-           Worked with many companies <br /> and picked up many skills along the way
-         </p>
+  if (currentStage === 2) {
+    return (
+      <div className="info-box">
+        <p className="font-medium sm:text-xl text-center">
+          Building applications with Node.js, Python, AWS,
+          <br />
+          databases, Docker, and RESTful APIs.
+        </p>
 
-         <Link to='/about' className='neo-brutalism-white neo-btn'>
-           Learn more
-           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
-         </Link>
-       </div>
-     );
-   }
+        <Link to="/about" className="neo-brutalism-white neo-btn">
+          Learn more
+          <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
+        </Link>
+      </div>
+    );
+  }
 
-   if (currentStage === 3) {
-     return (
-       <div className='info-box'>
-         <p className='font-medium text-center sm:text-xl'>
-           Led multiple projects to success over the years. <br /> Curious about the impact?
-         </p>
+  if (currentStage === 3) {
+    return (
+      <div className="info-box">
+        <p className="font-medium text-center sm:text-xl">
+          Explore my projects across full-stack development,
+          <br />
+          backend engineering, and software development.
+        </p>
 
-         <Link to='/projects' className='neo-brutalism-white neo-btn'>
-           Visit my portfolio
-           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
-         </Link>
-       </div>
-     );
-   }
+        <Link to="/projects" className="neo-brutalism-white neo-btn">
+          View my projects
+          <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
+        </Link>
+      </div>
+    );
+  }
 
-   if (currentStage === 4) {
-     return (
-       <div className='info-box'>
-       <p className='font-medium sm:text-xl text-center'>
-         Need a project done or looking for a dev? <br/> I'm just a few keystrokes away
-       </p>
+  if (currentStage === 4) {
+    return (
+      <div className="info-box">
+        <p className="font-medium sm:text-xl text-center">
+          Have a project in mind or want to connect?
+          <br />
+          Let's build something together.
+        </p>
 
-       <Link to='/contact' className='neo-brutalism-white neo-btn'>
-         Let's talk
-         <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
-       </Link>
-     </div>
-     );
-   }
- };
+        <Link to="/contact" className="neo-brutalism-white neo-btn">
+          Let's talk
+          <img src={arrow} alt="arrow" className="w-4 h-4 object-contain" />
+        </Link>
+      </div>
+    );
+  }
 
- export default HomeInfo;
+  return null;
+};
+
+export default HomeInfo;
