@@ -256,8 +256,6 @@ export const projects = [
         iconUrl: taskforge,
         theme: "btn-back-yellow",
     },
-    
-    
     {
         iconUrl: shopping,
         theme: "btn-back-blue",

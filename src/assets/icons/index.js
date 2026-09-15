@@ -24,7 +24,6 @@ import university from "./university.svg";
 import devreview from "./devreview.png";
 import finora from "./finora.png";
 import taskforge from "./taskforge.png";
-
 import arrow from "./arrow.svg";
 import contact from "./contact.svg";
 
@@ -73,7 +72,6 @@ export {
   devreview,
   finora,
   taskforge,
-
   arrow,
   contact,
   soundon,
