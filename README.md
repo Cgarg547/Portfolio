@@ -4,7 +4,7 @@ An interactive personal portfolio built with React, Vite, Tailwind CSS, and Thre
 
 ## 🌐 Live Portfolio
 
-**[Visit My Portfolio](portfolio-kohl-nu-81.vercel.app)**
+**[Visit My Portfolio]((https://portfolio-kohl-nu-81.vercel.app))**
 
 ## 👨‍💻 About
 
